@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 150 20% 88%;
+    --foreground: 160 40% 10%;
+
+    --card: 150 18% 84%;
+    --card-foreground: 160 40% 10%;
+
+    --popover: 150 15% 96%;
+    --popover-foreground: 160 40% 10%;
+
+    --primary: 160 70% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 15% 80%;
+    --secondary-foreground: 160 40% 12%;
+
+    --muted: 150 12% 75%;
+    --muted-foreground: 160 30% 30%;
+
+    --accent: 160 70% 28%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 160 30% 65%;
+    --input: 150 20% 75%;
+    --ring: 160 70% 28%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens - Light mode (subtle green tint) */
+    --gradient-hero: linear-gradient(135deg, hsl(160 70% 28% / 0.12) 0%, hsl(150 20% 88%) 50%);
+    --gradient-card: linear-gradient(145deg, hsl(150 18% 86%) 0%, hsl(150 18% 82%) 100%);
+    --shadow-glow: 0 0 60px -15px hsl(160 70% 28% / 0.4);
+    --shadow-card: 0 25px 50px -12px hsl(160 30% 20% / 0.15);
+    
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --sidebar-background: 150 18% 84%;
+    --sidebar-foreground: 160 40% 10%;
+    --sidebar-primary: 160 70% 28%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 15% 80%;
+    --sidebar-accent-foreground: 160 40% 10%;
+    --sidebar-border: 160 30% 65%;
+    --sidebar-ring: 160 70% 28%;
+  }
+
+  .dark {
+    --background: 222 25% 6%;
+    --foreground: 60 10% 95%;
+
+    --card: 222 22% 10%;
+    --card-foreground: 60 10% 95%;
+
+    --popover: 222 22% 10%;
+    --popover-foreground: 60 10% 95%;
+
+    --primary: 160 84% 39%;
+    --primary-foreground: 222 25% 6%;
+
+    --secondary: 222 18% 15%;
+    --secondary-foreground: 60 10% 95%;
+
+    --muted: 222 18% 18%;
+    --muted-foreground: 220 12% 55%;
+
+    --accent: 160 84% 39%;
+    --accent-foreground: 222 25% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 18% 18%;
+    --input: 222 18% 18%;
+    --ring: 160 84% 39%;
+
+    /* Custom design tokens - Dark mode */
+    --gradient-hero: linear-gradient(135deg, hsl(160 84% 39% / 0.15) 0%, hsl(222 25% 6%) 50%);
+    --gradient-card: linear-gradient(145deg, hsl(222 22% 12%) 0%, hsl(222 22% 8%) 100%);
+    --shadow-glow: 0 0 60px -15px hsl(160 84% 39% / 0.35);
+    --shadow-card: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
+
+    --sidebar-background: 222 22% 10%;
+    --sidebar-foreground: 60 10% 95%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 222 25% 6%;
+    --sidebar-accent: 222 18% 15%;
+    --sidebar-accent-foreground: 60 10% 95%;
+    --sidebar-border: 222 18% 18%;
+    --sidebar-ring: 160 84% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(160 70% 50%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .dark .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(160 80% 60%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 ease-out hover:-translate-y-2;
+  }
+
+  .glass {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50;
+  }
+
+  :root .glass {
+    @apply bg-card/95 shadow-sm border-primary/15;
+  }
+
+  /* Light mode enhanced green accents */
+  :root .border-border {
+    border-color: hsl(160 84% 32% / 0.12);
+  }
+
+  :root section {
+    --tw-border-opacity: 1;
+  }
+}
