@@ -1,6 +1,3 @@
-// ===== SITE CONFIGURATION =====
-// Edit this file to update your portfolio content without touching component code
-
 export interface HardSkill {
   name: string;
 }
@@ -20,16 +17,15 @@ export interface TimelineItem {
   company: string;
   description: string;
   type: "work" | "education" | "achievement" | "activity";
-  // Optional detailed info for the popup
   popup?: {
-    startDate?: string;       // e.g., "Jan 2024"
-    endDate?: string;         // e.g., "Present" or "Dec 2024"
-    location?: string;        // e.g., "Lisbon, Portugal"
-    summary?: string;         // Longer descriptive text about this experience
-    hardSkills?: string[];    // Technical skills used
-    softSkills?: string[];    // Soft skills developed
-    highlights?: string[];    // Key achievements/highlights
-    image?: string;           // Optional image URL
+    startDate?: string;
+    endDate?: string;
+    location?: string;
+    summary?: string;
+    hardSkills?: string[];
+    softSkills?: string[];
+    highlights?: string[];
+    image?: string;
   };
 }
 
@@ -55,7 +51,6 @@ export const personalInfo = {
 };
 
 // ===== HARD SKILLS =====
-// Add or remove skills as needed - the layout will adjust automatically
 export const hardSkills: HardSkill[] = [
   { name: "Java" },
   { name: "C" },
@@ -65,14 +60,22 @@ export const hardSkills: HardSkill[] = [
   { name: "RISC-V" },
   { name: "HTML" },
   { name: "CSS" },
+  { name: "TypeScript" },
+  { name: "C# (Unity)" },
   { name: "Object-Oriented Programming (OOP)" },
   { name: "Debugging" },
   { name: "Git" },
-  { name: "GitHub" }
+  { name: "GitHub" },
+  { name: "Hibernate" },
+  { name: "Next.js" },
+  { name: "React" },
+  { name: "Tailwind CSS" },
+  { name: "Prisma" },
+  { name: "Supabase" },
+  { name: "Unity" },
 ];
 
 // ===== SOFT SKILLS =====
-// Add or remove skills as needed - the layout will adjust automatically
 export const softSkills: SoftSkill[] = [
   { name: "Problem Solving" },
   { name: "Critical Thinking" },
@@ -87,52 +90,89 @@ export const softSkills: SoftSkill[] = [
 ];
 
 // ===== QUICK FACTS =====
-// Add or remove facts as needed - the grid will adjust automatically
 export const quickFacts: QuickFact[] = [
-  { value: "5", label: "Personal Projects" },
+  { value: "7", label: "Personal Projects" },
   { value: "2nd", label: "Year Student" },
 ];
 
 // ===== TIMELINE / JOURNEY =====
-// Add or remove items as needed - the timeline will adjust automatically
-// Types: "work", "education", "achievement", "activity"
 export const timelineItems: TimelineItem[] = [
   {
-  year: "2025",
-  title: "Ambassador",
-  company: "CGI",
-  description:
-    "Student ambassador representing CGI within the academic environment.",
-  type: "work",
-  popup: {
-    startDate: "Dec 2025",
-    endDate: "Present",
-    summary:
-      "Selected as a CGI Ambassador to represent the company within the academic environment. Responsibilities include promoting company initiatives, participating in outreach activities, and acting as a point of contact between students and CGI representatives.",
-    softSkills: [
-      "Communication",
-      "Networking",
-      "Professional Representation",
-      "Responsibility",
-    ],
-    highlights: [
-      "Represented CGI in academic and outreach initiatives",
-    ],
+    year: "2026",
+    title: "Follow Your Past — GameJam 2026",
+    company: "NEI–ISEP GameJam",
+    description:
+        "Atmospheric pixel art puzzle game developed in 47 hours with team BENIA, ranking 3rd out of all participating teams.",
+    type: "achievement",
+    popup: {
+      startDate: "Mar 2026",
+      endDate: "Mar 2026",
+      location: "Porto, Portugal",
+      summary:
+          "Developed an atmospheric pixel art puzzle game called Follow Your Past in 47 hours as part of GameJam 2026, organised by NEI–ISEP, as part of team BENIA. The game features cryptic clues, chest unlocking mechanics and code combination locks. Built using Unity and C# for the first time under competition pressure. Ranked 3rd out of all participating teams.",
+      hardSkills: [
+        "Unity",
+        "C#",
+        "Game Design",
+        "Pixel Art",
+      ],
+      softSkills: [
+        "Teamwork",
+        "Creativity",
+        "Adaptability",
+        "Delivery Under Pressure",
+      ],
+      highlights: [
+        "Ranked 3rd out of all participating teams as part of team BENIA",
+        "Built with Unity and C# for the first time",
+        "Completed a fully playable game in 47 hours",
+      ],
+    },
   },
-},
   {
     year: "2025",
-    title: "Member – Informatics Students’ Group (NEI)",
+    title: "Ambassador",
+    company: "CGI",
+    description:
+        "Student ambassador representing CGI within the academic environment.",
+    type: "work",
+    popup: {
+      startDate: "Dec 2025",
+      endDate: "Present",
+      location: "Porto, Portugal",
+      summary:
+          "Selected as a CGI Ambassador to represent the company within the academic environment. Responsibilities include promoting company initiatives, participating in outreach activities, and acting as a point of contact between students and CGI representatives.",
+      softSkills: [
+        "Communication",
+        "Networking",
+        "Professional Representation",
+        "Responsibility",
+      ],
+      highlights: [
+        "Represented CGI in academic and outreach initiatives",
+      ],
+    },
+  },
+  {
+    year: "2025",
+    title: "Member – Informatics Students' Group (NEI)",
     company: "ISEP – Instituto Superior de Engenharia do Porto",
     description:
-      "Active member of the Informatics students’ organisation, supporting academic and technical initiatives.",
+        "Active member of the Informatics students' organisation, supporting academic and technical initiatives.",
     type: "activity",
     popup: {
       startDate: "Oct 2025",
       endDate: "Present",
       location: "Porto, Portugal",
       summary:
-        "Active member of the Informatics Students’ Group (NEI), the official student organisation representing Informatics Engineering students at ISEP. Contributed to academic, technical and student-led initiatives, collaborating with peers to support the student community.",
+          "Active member of the Informatics Students' Group (NEI), the official student organisation representing Informatics Engineering students at ISEP. Co-developed the official FallStack 2025 event website using TypeScript, Next.js, Prisma, Tailwind CSS and Supabase. Contributed to academic, technical and student-led initiatives, collaborating with peers to support the student community.",
+      hardSkills: [
+        "TypeScript",
+        "Next.js",
+        "Prisma",
+        "Tailwind CSS",
+        "Supabase",
+      ],
       softSkills: [
         "Teamwork",
         "Communication",
@@ -140,23 +180,24 @@ export const timelineItems: TimelineItem[] = [
         "Collaboration",
       ],
       highlights: [
+        "Co-developed the official FallStack 2025 event website",
         "Participation in student-led academic and technical initiatives",
       ],
     },
   },
   {
     year: "2025",
-    title: "Gulbenkian Scholars’ Meeting",
+    title: "Gulbenkian Scholars' Meeting",
     company: "Fundação Calouste Gulbenkian",
     description:
-      "Academic and cultural exchange event for high-achieving students.",
+        "Academic and cultural exchange event for high-achieving students.",
     type: "achievement",
     popup: {
       startDate: "Feb 2025",
       endDate: "Feb 2025",
       location: "Lisboa, Portugal",
       summary:
-        "Invited to participate in the Gulbenkian Scholars’ Meeting due to an excellence-level university admission score. Took part in academic discussions, cultural activities and networking with students from different academic backgrounds.",
+          "Invited to participate in the Gulbenkian Scholars' Meeting due to an excellence-level university admission score. Took part in academic discussions, cultural activities and networking with students from different academic backgrounds.",
       softSkills: [
         "Networking",
         "Cultural Awareness",
@@ -169,50 +210,17 @@ export const timelineItems: TimelineItem[] = [
   },
   {
     year: "2024",
-    title: "Academic Coursework – Informatics Engineering",
-    company: "ISEP – Instituto Superior de Engenharia do Porto",
-    description:
-      "Development of academic software systems using object-oriented and systems-level programming.",
-    type: "education",
-    popup: {
-      startDate: "2024",
-      endDate: "Present",
-      location: "Porto, Portugal",
-      summary:
-        "Relevant academic experience involving the development of Java applications using object-oriented programming, implementation of algorithms and data structures, systems programming in C and RISC-V Assembly, and software architecture design using UML modelling tools.",
-      hardSkills: [
-        "Java",
-        "JavaFX",
-        "C",
-        "RISC-V Assembly",
-        "Algorithms",
-        "Software Architecture",
-        "Version Control (Git)",
-      ],
-      softSkills: [
-        "Communication",
-        "Collaboration",
-        "Organisation",
-      ],
-      highlights: [
-        "Team-based academic projects",
-        "Applied UML modelling with Visual Paradigm",
-      ],
-    },
-  },
-  {
-    year: "2024",
     title: "BSc in Informatics Engineering",
     company: "ISEP – Instituto Superior de Engenharia do Porto",
     description:
-      "Undergraduate degree focused on software engineering, algorithms, data structures and systems programming.",
+        "Undergraduate degree focused on software engineering, algorithms, data structures and systems programming.",
     type: "education",
     popup: {
       startDate: "Sep 2024",
       endDate: "Present",
       location: "Porto, Portugal",
       summary:
-        "Currently attending a Bachelor's degree in Informatics Engineering, with a strong focus on software development, algorithms, data structures, databases and systems programming. Coursework includes both individual and team-based academic work, with an emphasis on problem solving and software design.",
+          "Currently attending a Bachelor's degree in Informatics Engineering, with a strong focus on software development, algorithms, data structures, databases and systems programming. Coursework includes both individual and team-based academic work, with an emphasis on problem solving and software design. 2nd and 3rd semester integrative projects ranked among the Top 3 of their respective semesters.",
       hardSkills: [
         "Java",
         "C",
@@ -232,6 +240,7 @@ export const timelineItems: TimelineItem[] = [
       ],
       highlights: [
         "Current average grade: 17.75/20",
+        "2nd and 3rd semester projects ranked Top 3 of their semesters",
       ],
     },
   },
@@ -240,14 +249,14 @@ export const timelineItems: TimelineItem[] = [
     title: "Futsal Referee",
     company: "Associação de Futebol de Aveiro (AFA)",
     description:
-      "Certified futsal referee officiating official competitive matches.",
+        "Certified futsal referee officiating official competitive matches.",
     type: "activity",
     popup: {
       startDate: "Nov 2022",
       endDate: "Present",
       location: "Aveiro, Portugal",
       summary:
-        "Certified futsal referee responsible for officiating official matches, enforcing regulations, managing competitive environments and making decisions under pressure.",
+          "Certified futsal referee responsible for officiating official matches, enforcing regulations, managing competitive environments and making decisions under pressure.",
       softSkills: [
         "Decision Making",
         "Stress Management",
@@ -264,14 +273,14 @@ export const timelineItems: TimelineItem[] = [
     title: "Science and Technology Course",
     company: "Escola Secundária Dr. Serafim Leite",
     description:
-      "Upper secondary education with a strong focus on mathematics and sciences.",
+        "Upper secondary education with a strong focus on mathematics and sciences.",
     type: "education",
     popup: {
       startDate: "Sep 2021",
       endDate: "Aug 2024",
       location: "São João da Madeira, Portugal",
       summary:
-        "Completed upper secondary education in the Science and Technology track, with a strong emphasis on mathematics, physics and analytical problem solving.",
+          "Completed upper secondary education in the Science and Technology track, with a strong emphasis on mathematics, physics and analytical problem solving.",
       softSkills: [
         "Analytical Thinking",
         "Discipline",
