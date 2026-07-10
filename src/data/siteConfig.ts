@@ -42,9 +42,9 @@ export const personalInfo = {
   title: "Informatics Engineering Student",
   subtitle: "Building solid foundations in software engineering",
   bio: [
-    "I am a 2nd-year student of the Bachelor's Degree in Computer Engineering at ISEP, with hands-on experience across academic and personal projects, and practical exposure to backend development in a professional context. From an early age, I have been fascinated by how computer engineering allows creativity, logic, and problem solving to come together, giving me the freedom to explore innovative solutions and achieve concrete results.",
+    "I am a 2nd year student of the Bachelor's Degree in Computer Engineering at ISEP, with hands-on experience across academic and personal projects, and practical exposure to backend development in a professional context. From an early age, I have been fascinated by how computer engineering allows creativity, logic, and problem solving to come together, giving me the freedom to explore innovative solutions and achieve concrete results.",
     "In high school, I completed the Science and Technology course with a final grade point average of 18/20. I was awarded a scholarship from the Gulbenkian Foundation, which recognises academic merit and provides additional motivation to always do my best.",
-    "I am a determined, focused person who enjoys facing challenges and always gives my all in everything I do. I am a quick learner, enjoy researching, and am proactive in finding solutions. I deeply value teamwork — I enjoy collaborating with my colleagues, sharing ideas, and contributing to our common success.",
+    "I am a determined, focused person who enjoys facing challenges and always gives my all in everything I do. I am a quick learner, enjoy researching, and am proactive in finding solutions. I deeply value teamwork, and enjoy collaborating with my colleagues, sharing ideas, and contributing to our common success.",
     "I see computer engineering as an area where I can grow personally and professionally, and where every challenge is an opportunity to evolve.",
     "I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.",
   ],
@@ -103,7 +103,7 @@ export const softSkills: SoftSkill[] = [
 
 // ===== QUICK FACTS =====
 export const quickFacts: QuickFact[] = [
-  { value: "7", label: "Personal Projects" },
+  { value: "8", label: "Personal Projects" },
   { value: "2nd", label: "Year Student" },
 ];
 
