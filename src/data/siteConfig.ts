@@ -42,7 +42,7 @@ export const personalInfo = {
   title: "Informatics Engineering Student",
   subtitle: "Building solid foundations in software engineering",
   bio: [
-    "I am a 2nd year student of the Bachelor's Degree in Computer Engineering at ISEP, with a strong passion for programming and mathematics. From an early age, I have been fascinated by how computer engineering allows creativity, logic, and problem solving to come together, giving me the freedom to explore innovative solutions and achieve concrete results.",
+    "I am a 2nd-year student of the Bachelor's Degree in Computer Engineering at ISEP, with hands-on experience across academic and personal projects, and practical exposure to backend development in a professional context. From an early age, I have been fascinated by how computer engineering allows creativity, logic, and problem solving to come together, giving me the freedom to explore innovative solutions and achieve concrete results.",
     "In high school, I completed the Science and Technology course with a final grade point average of 18/20. I was awarded a scholarship from the Gulbenkian Foundation, which recognises academic merit and provides additional motivation to always do my best.",
     "I am a determined, focused person who enjoys facing challenges and always gives my all in everything I do. I am a quick learner, enjoy researching, and am proactive in finding solutions. I deeply value teamwork — I enjoy collaborating with my colleagues, sharing ideas, and contributing to our common success.",
     "I see computer engineering as an area where I can grow personally and professionally, and where every challenge is an opportunity to evolve.",
@@ -52,27 +52,39 @@ export const personalInfo = {
 
 // ===== HARD SKILLS =====
 export const hardSkills: HardSkill[] = [
+  // Programming Languages
   { name: "Java" },
   { name: "C" },
   { name: "Python" },
   { name: "SQL" },
   { name: "PL/SQL" },
-  { name: "RISC-V" },
+  { name: "RISC-V (Assembly)" },
   { name: "HTML" },
   { name: "CSS" },
   { name: "TypeScript" },
   { name: "C# (Unity)" },
-  { name: "Object-Oriented Programming (OOP)" },
-  { name: "Debugging" },
-  { name: "Git" },
-  { name: "GitHub" },
+  // Frameworks & Libraries
+  { name: "JavaFX" },
   { name: "Hibernate" },
+  { name: "ANTLR" },
   { name: "Next.js" },
   { name: "React" },
   { name: "Tailwind CSS" },
   { name: "Prisma" },
   { name: "Supabase" },
   { name: "Unity" },
+  // Databases
+  { name: "Oracle Database" },
+  { name: "PostgreSQL" },
+  { name: "MySQL" },
+  // Tools & Practices
+  { name: "Git" },
+  { name: "GitHub" },
+  { name: "Maven" },
+  { name: "JUnit" },
+  { name: "Object-Oriented Programming (OOP)" },
+  { name: "Debugging" },
+  { name: "Scrum" },
 ];
 
 // ===== SOFT SKILLS =====
@@ -99,6 +111,21 @@ export const quickFacts: QuickFact[] = [
 export const timelineItems: TimelineItem[] = [
   {
     year: "2026",
+    title: "Backend Developer",
+    company: "Adhara Academy",
+    description:
+        "Developing the backend of Adhara QBank, a question bank platform for medical exam preparation.",
+    type: "work",
+    popup: {
+      startDate: "Jun 2026",
+      endDate: "Present",
+      location: "Santa Maria da Feira, Portugal",
+      summary:
+          "Developing the backend of Adhara QBank, a question bank platform for medical exam preparation.",
+    },
+  },
+  {
+    year: "2026",
     title: "Follow Your Past — GameJam 2026",
     company: "NEI–ISEP GameJam",
     description:
@@ -123,7 +150,7 @@ export const timelineItems: TimelineItem[] = [
         "Delivery Under Pressure",
       ],
       highlights: [
-        "Ranked 3rd out of all participating teams as part of team BENIA",
+        "Ranked 3rd out of all participating teams as part of team BENIA (5 people, 141 commits)",
         "Built with Unity and C# for the first time",
         "Completed a fully playable game in 47 hours",
       ],
@@ -240,6 +267,7 @@ export const timelineItems: TimelineItem[] = [
       ],
       highlights: [
         "Current average grade: 17.75/20",
+        "1st and 4th semester projects graded 19/20",
         "2nd and 3rd semester projects ranked Top 3 of their semesters",
       ],
     },

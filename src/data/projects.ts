@@ -19,7 +19,7 @@ export const projects: Project[] = [
     shortDescription:
         "Atmospheric pixel art puzzle game developed in 47 hours with team BENIA at NEI–ISEP GameJam 2026, ranking 3rd out of all participating teams.",
     fullDescription:
-        "Follow Your Past is an atmospheric pixel art puzzle game developed in 47 hours as part of GameJam 2026, organised by the Informatics Students' Group (NEI) at ISEP, by team BENIA. The game features a mysterious experience filled with puzzle-solving elements, including hidden letters, infinity symbol mechanics, and code combination locks. The entire project was built using Unity and C# for the first time, under strict time pressure and competition conditions. The team successfully designed the core concept and visual identity, developed all interactive mechanics, and managed time effectively to deliver a fully playable prototype within the deadline. The project was ranked 3rd out of all participating teams, reflecting the quality and creativity of the work delivered under such demanding conditions.",
+        "Follow Your Past is an atmospheric pixel art puzzle game developed in 47 hours as part of GameJam 2026, organised by the Informatics Students' Group (NEI) at ISEP, by team BENIA — a group of 5 people who together produced 141 commits over the course of the event. The game features a mysterious experience filled with puzzle-solving elements, including hidden letters, infinity symbol mechanics, and code combination locks. The entire project was built using Unity and C# for the first time, under strict time pressure and competition conditions. The team successfully designed the core concept and visual identity, developed all interactive mechanics, and managed time effectively to deliver a fully playable prototype within the deadline. The project was ranked 3rd out of all participating teams, reflecting the quality and creativity of the work delivered under such demanding conditions.",
     tags: [
       "Unity",
       "C#",
@@ -52,12 +52,99 @@ export const projects: Project[] = [
     liveUrl: undefined,
   },
   {
+    // PLACEHOLDER: sem imagens/galeria/repositório GitHub reais ainda — substituir quando disponíveis.
+    id: "aisafe-flight-control-system",
+    title: "AISafe — Flight Control & Management System",
+    shortDescription:
+        "Air traffic management system built by a 5-person team (493 commits, 60,000+ lines of Java), including a custom flight-plan DSL and a multiprocess C flight simulator.",
+    fullDescription:
+        "AISafe was developed as the Integrative Project of the 4th semester (February–June 2026) of the 2025/2026 academic year, by a team of 5 people, totalling 493 commits and over 60,000 lines of Java code, with 37 user stories delivered. The project focuses on air traffic management and flight control, and includes a custom domain-specific language (DSL) for defining flight plans, implemented using ANTLR4, as well as a multiprocess flight simulator written in C using POSIX semaphores for process synchronisation. The project achieved a final grade of 19/20.",
+    tags: [
+      "Java",
+      "C",
+      "ANTLR4",
+      "DSL",
+      "POSIX",
+      "Multiprocessing",
+      "Semaphores",
+      "SCRUM",
+      "Air Traffic Management",
+    ],
+    image: "/profile.jpg",
+    gallery: ["/profile.jpg"],
+    features: [
+      "Custom flight-plan domain-specific language (DSL) built with ANTLR4",
+      "Multiprocess flight simulator in C using POSIX semaphores",
+      "37 user stories delivered across the project lifecycle",
+      "Over 60,000 lines of Java developed by a 5-person team",
+    ],
+    githubUrl: "https://github.com/EduardoAlmeida0301",
+    liveUrl: undefined,
+  },
+  {
+    // PLACEHOLDER: sem imagens/galeria/repositório GitHub reais ainda — substituir quando disponíveis.
+    id: "expligest-tutoring-platform",
+    title: "ExpliGest — Tutoring Management Platform",
+    shortDescription:
+        "Full-stack platform for managing private tutoring: students, scheduling, automated FIFO payment allocation, and a multi-tenant analytics dashboard.",
+    fullDescription:
+        "ExpliGest is a personal full-stack project (February–July 2026) built to manage the operations of a private tutoring business, including student records, scheduling/calendar management, and payments with automatic FIFO allocation. It features an analytics dashboard with 10+ charts for tracking business performance, and is built as a multi-tenant application secured with Row Level Security (RLS) on PostgreSQL, ensuring strict data isolation between tenants.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Recharts",
+      "Multi-Tenant",
+      "Row Level Security",
+    ],
+    image: "/profile.jpg",
+    gallery: ["/profile.jpg"],
+    features: [
+      "Student management and scheduling calendar",
+      "Automatic FIFO payment allocation",
+      "Analytics dashboard with 10+ charts",
+      "Multi-tenant architecture with Row Level Security (RLS) on PostgreSQL",
+    ],
+    githubUrl: "https://github.com/EduardoAlmeida0301",
+    liveUrl: undefined,
+  },
+  {
+    // PLACEHOLDER: sem imagens/galeria/repositório GitHub reais ainda — substituir quando disponíveis.
+    id: "collectify-sticker-app",
+    title: "Collectify — Sticker Collection App",
+    shortDescription:
+        "Sticker-trading app built in 24 days (77 commits), cataloguing 1,074 items with real-time chat and PDF checklist export.",
+    fullDescription:
+        "Collectify is a personal project (May 2026) built in 24 days across 77 commits, designed for cataloguing and trading sticker collections. It supports a catalogue of 1,074 items, real-time chat between users for trading, PDF checklist export, and a mobile-first quick-entry mode for fast data input. Built as a Progressive Web App (PWA) with Next.js, React and TypeScript, using Supabase (PostgreSQL with Row Level Security) as the backend.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Row Level Security",
+      "PWA",
+    ],
+    image: "/profile.jpg",
+    gallery: ["/profile.jpg"],
+    features: [
+      "Catalogue of 1,074 items",
+      "Real-time chat for trading between users",
+      "PDF checklist export",
+      "Mobile-first quick-entry mode",
+      "Built as a Progressive Web App (PWA)",
+    ],
+    githubUrl: "https://github.com/EduardoAlmeida0301",
+    liveUrl: undefined,
+  },
+  {
     id: "logistics-on-rails",
     title: "Logistics On Rails",
     shortDescription:
         "Software application for managing warehouse operations and freight logistics within railway systems.",
     fullDescription:
-        "This project was developed as part of the Integrative Project of the 3rd semester of the 2025/2026 academic year and focuses on the design and implementation of a software application for the management of warehouse operations and freight logistics within railway systems. The system supports the modelling and coordination of warehouses, railway infrastructure, stations, routes, and cargo movements, addressing real-world operational constraints associated with railway-based logistics. The solution integrates multiple technical components, combining high-level application logic with relational database management and low-level system modules. Core functionalities include warehouse inventory control, freight handling, coordination between warehouses and railway networks, route planning, and the monitoring of operational and environmental conditions. The project was developed following an iterative and incremental SCRUM-based approach, with a strong emphasis on modular design, data consistency, and system reliability. Recognised as a top three project of the academic year, with no ranking or distinction among the top three.",
+        "This project was developed as part of the Integrative Project of the 3rd semester (September 2025 – January 2026) of the 2025/2026 academic year, by a team of 5 people, and focuses on the design and implementation of a software application for the management of warehouse operations and freight logistics within railway systems. The system supports the modelling and coordination of warehouses, railway infrastructure, stations, routes, and cargo movements, addressing real-world operational constraints associated with railway-based logistics. The solution integrates multiple technical components, combining high-level application logic with relational database management and low-level system modules, comprising over 70,000 lines of Java code and supporting 15+ user profiles. Data persistence was implemented using Oracle Database with PL/SQL, and core graph-based algorithms — including Dijkstra, Bellman-Ford, Edmonds-Karp and Kruskal — were implemented from scratch for route planning and network optimisation. Core functionalities include warehouse inventory control, freight handling, coordination between warehouses and railway networks, route planning, and the monitoring of operational and environmental conditions. The project was developed following an iterative and incremental SCRUM-based approach, with a strong emphasis on modular design, data consistency, and system reliability. Recognised as a top three project of the academic year, with no ranking or distinction among the top three.",
     tags: [
       "Java",
       "C",
@@ -97,7 +184,9 @@ export const projects: Project[] = [
       "Support for FIFO and FEFO inventory management strategies",
       "Environmental monitoring of goods using sensor data",
       "Relational database design with advanced PL/SQL queries",
-      "Graph-based algorithms for logistics and network optimisation",
+      "Graph algorithms implemented from scratch: Dijkstra, Bellman-Ford, Edmonds-Karp and Kruskal",
+      "Supports 15+ distinct user profiles with role-based access",
+      "Over 70,000 lines of Java developed by a 5-person team",
     ],
     userManualUrl: "/Project 3 - SEM3P1/User_Manual.pdf",
     githubUrl: "https://github.com/EduardoAlmeida0301/Sem3-Integrative-Project",
