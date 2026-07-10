@@ -70,8 +70,8 @@ export const projects: Project[] = [
       "SCRUM",
       "Air Traffic Management",
     ],
-    image: "/profile.jpg",
-    gallery: ["/profile.jpg"],
+    image: "/projects/placeholder-aisafe.svg",
+    gallery: ["/projects/placeholder-aisafe.svg"],
     features: [
       "Custom flight-plan domain-specific language (DSL) built with ANTLR4",
       "Multiprocess flight simulator in C using POSIX semaphores",
@@ -98,8 +98,8 @@ export const projects: Project[] = [
       "Multi-Tenant",
       "Row Level Security",
     ],
-    image: "/profile.jpg",
-    gallery: ["/profile.jpg"],
+    image: "/projects/placeholder-expligest.svg",
+    gallery: ["/projects/placeholder-expligest.svg"],
     features: [
       "Student management and scheduling calendar",
       "Automatic FIFO payment allocation",
@@ -126,8 +126,8 @@ export const projects: Project[] = [
       "Row Level Security",
       "PWA",
     ],
-    image: "/profile.jpg",
-    gallery: ["/profile.jpg"],
+    image: "/projects/placeholder-collectify.svg",
+    gallery: ["/projects/placeholder-collectify.svg"],
     features: [
       "Catalogue of 1,074 items",
       "Real-time chat for trading between users",

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Collectify project placeholder image">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(222, 22%, 12%)"/>
+      <stop offset="100%" stop-color="hsl(222, 25%, 6%)"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="32%" r="55%">
+      <stop offset="0%" stop-color="hsl(160, 84%, 39%)" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="hsl(160, 84%, 39%)" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#glow)"/>
+  <rect x="2" y="2" width="1196" height="671" fill="none" stroke="hsl(160, 84%, 39%)" stroke-opacity="0.18" stroke-width="3"/>
+
+  <rect x="540" y="210" width="120" height="120" rx="24" fill="hsl(160, 84%, 39%)" fill-opacity="0.12"/>
+  <polyline points="612,252 636,280 612,308" fill="none" stroke="hsl(160, 84%, 39%)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="588,252 564,280 588,308" fill="none" stroke="hsl(160, 84%, 39%)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="600" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="58" fill="hsl(60, 10%, 95%)">Collectify</text>
+  <text x="600" y="462" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="3" fill="hsl(220, 12%, 55%)">PREVIEW IMAGE COMING SOON</text>
+</svg>
